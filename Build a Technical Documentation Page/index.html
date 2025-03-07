@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Technique JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentation JavaScript</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Variables_et_Types">Variables et Types</a></li>
+            <li><a class="nav-link" href="#Fonctions">Fonctions</a></li>
+            <li><a class="nav-link" href="#Boucles">Boucles</a></li>
+            <li><a class="nav-link" href="#Objets_et_Tableaux">Objets et Tableaux</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript est un langage de programmation populaire utilisé pour le développement web.</p>
+            <p>Il permet de rendre les pages web interactives et dynamiques.</p>
+            <p>Voici un exemple de code JavaScript simple :</p>
+            <code>console.log("Hello, world!");</code>
+            <p>Ce code affiche "Hello, world!" dans la console du navigateur.</p>
+        </section>
+
+        <section class="main-section" id="Variables_et_Types">
+            <header>Variables et Types</header>
+            <p>JavaScript utilise <code>var</code>, <code>let</code> et <code>const</code> pour déclarer des variables.
+            </p>
+            <p>Chaque type de déclaration a ses propres caractéristiques :</p>
+            <ul>
+                <li><code>var</code> : portée globale ou fonction.</li>
+                <li><code>let</code> : portée de bloc.</li>
+                <li><code>const</code> : constante, ne peut pas être réassignée.</li>
+            </ul>
+            <p>Exemple de déclaration de variables :</p>
+            <code>
+                var x = 5;<br>
+                let y = 10;<br>
+                const PI = 3.14;
+            </code>
+        </section>
+
+        <section class="main-section" id="Fonctions">
+            <header>Fonctions</header>
+            <p>Les fonctions permettent de réutiliser du code et d'organiser la logique du programme.</p>
+            <p>Voici un exemple de déclaration de fonction :</p>
+            <code>function greet(name) { return "Hello " + name; }</code>
+            <p>On peut appeler cette fonction ainsi :</p>
+            <code>console.log(greet("Alice")); // Affiche "Hello Alice"</code>
+        </section>
+
+        <section class="main-section" id="Boucles">
+            <header>Boucles</header>
+            <p>JavaScript propose plusieurs types de boucles pour répéter des actions.</p>
+            <p>Les deux types de boucles les plus courants sont :</p>
+            <ul>
+                <li><code>for</code> : boucle avec compteur.</li>
+                <li><code>while</code> : boucle conditionnelle.</li>
+            </ul>
+            <p>Exemple de boucle for :</p>
+            <code>
+                for (let i = 0; i < 5; i++) {<br>
+                    &nbsp;&nbsp;console.log(i);<br>
+                    }
+            </code>
+        </section>
+
+        <section class="main-section" id="Objets_et_Tableaux">
+            <header>Objets et Tableaux</header>
+            <p>Les objets et tableaux sont des structures de données essentielles en JavaScript.</p>
+            <p>Exemple d'objet :</p>
+            <code>let person = { name: "Alice", age: 25 };</code>
+            <p>Exemple de tableau :</p>
+            <code>let fruits = ["pomme", "banane", "orange"];</code>
+            <p>On peut accéder aux éléments d'un objet ou d'un tableau ainsi :</p>
+            <code>
+                console.log(person.name); // Affiche "Alice"<br>
+                console.log(fruits[0]); // Affiche "pomme"
+            </code>
+        </section>
+    </main>
+</body>
+
+</html>
