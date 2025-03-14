@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sanctifier | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#welcome-section">AM</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#welcome-section">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section">
+      <div class="welcome-content">
+        <h1>Hello, I'm Alex Morgan</h1>
+        <p class="subtitle">Full-Stack Web Developer</p>
+        <p class="description">
+          I build responsive, user-friendly websites and web applications
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!--  Projects Section  -->
+    <section id="projects">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <p>Here are some of my recent works</p>
+      </div>
+
+      <div class="projects-grid">
+        <a
+          href="https://example.com/project1"
+          target="_blank"
+          class="project-tile"
+        >
+          <img
+            src="https://via.placeholder.com/600x400?text=E-Commerce+App"
+            alt="E-Commerce App"
+          />
+          <div class="project-info">
+            <h3>E-Commerce App</h3>
+            <p>
+              A full-featured online store with shopping cart and payment
+              integration
+            </p>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://example.com/project2"
+          target="_blank"
+          class="project-tile"
+        >
+          <img
+            src="https://via.placeholder.com/600x400?text=Weather+Dashboard"
+            alt="Weather Dashboard"
+          />
+          <div class="project-info">
+            <h3>Weather Dashboard</h3>
+            <p>
+              Real-time weather application with forecast and location search
+            </p>
+            <div class="tech-stack">
+              <span>JavaScript</span>
+              <span>Weather API</span>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://example.com/project3"
+          target="_blank"
+          class="project-tile"
+        >
+          <img
+            src="https://via.placeholder.com/600x400?text=Task+Manager"
+            alt="Task Manager"
+          />
+          <div class="project-info">
+            <h3>Task Manager</h3>
+            <p>
+              Productivity app for organizing tasks with drag-and-drop
+              functionality
+            </p>
+            <div class="tech-stack">
+              <span>Vue.js</span>
+              <span>Firebase</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://example.com/project4"
+          target="_blank"
+          class="project-tile"
+        >
+          <img
+            src="https://via.placeholder.com/600x400?text=Portfolio+Website"
+            alt="Portfolio Website"
+          />
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio website with modern design</p>
+            <div class="tech-stack">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="more-projects">
+        <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          class="btn primary-btn"
+          >See More on GitHub <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!--  Contact Section  -->
+    <section id="contact">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>
+          Feel free to reach out for collaborations or just a friendly hello
+        </p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>alex.morgan@example.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>San Francisco, CA</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/yourusername"
+            id="profile-link"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/yourusername" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://codepen.io/yourusername" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 sanctifier Yaw-Mensah. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Mobile navigation toggle
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("active");
+          this.classList.toggle("active");
+        });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.remove("active");
+          document.querySelector(".hamburger").classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
